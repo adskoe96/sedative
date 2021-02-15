@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Relax</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <style>body{background-color: black;}</style>
+    <center><img src="mae.gif" alt="peace and tranquility"  width=350/></center>
+    <audio autoplay loop id="music">
+    <source src="Rainy Day.mp3" type="audio/mpeg" allow="autoplay">
+   </audio>
+   <br/>
+   <br/>
+   <div>
+    <div>
+        <div class="box-3">
+            <div class="btn btn-three" onclick="aud_play()">
+              <span onclick="aud_play">Click here if the music is not playing</span>
+            </div>
+          </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="box-1">
+        <div class="btn btn-one" id="openlink">
+            <a href="https://adskoe96.github.io/links/" target='_blank'>
+            <span>Contact me</span>
+        </a>
+        </div>
+    </div>
+    <script>
+        function aud_play() {var playmus = document.getElementById("music");playmus.play();}
+    </script>
+    <script type="text/javascript">
+        document.getElementById("openlink").onclick = function () {
+            location.href = "https://adskoe96.github.io/links";
+        };
+    </script>
+</body>
+</html>
